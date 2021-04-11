@@ -1,0 +1,108 @@
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+Colors:
+#FAFAFA   Pozadí stránky
+#000000   nadpis             
+#8B8B8B   text, barva tlačítka 2             
+#407BFF   barva tlačítka 1
+#FFFFFF   text na tlačítku, pozadí rámečku s ikonou
+*/
+
+body {
+    margin: 0;
+    background-color: #FAFAFA;
+}
+
+.wrapper {
+    padding: 20px;
+    font: 16px/1.5 'Montserrat';
+    font-weight: 300;
+    color: #8B8B8B;
+}
+
+.cestovatel img {
+    width: 350px;
+    margin-top: 40px;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+h1,
+h2 {
+    font-weight: 500;
+    color: black;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 39.5px;
+    font-size: 28px;
+}
+
+a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 11px 30px;
+    border-radius: 20px;
+}
+
+.tlacitko {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.dobrodruzstvi {
+    background-color: #407BFF;
+    
+}
+
+.plaz {
+    background-color: #8B8B8B;
+    
+}
+
+h2 {
+    font-size: 16px;
+    margin-top: 60px;
+}
+
+.popis {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hlavni {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sluzby {
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.box {
+    padding: 20px;
+}
+
+.text {
+    font-size: 13px;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 640px) {
+    
+}
+
+
+@media screen and (min-width: 1100px) {
+    
+}
