@@ -22,8 +22,11 @@ body {
     color: #8B8B8B;
 }
 
+#travel {
+    max-width: 350px;
+}
 .cestovatel img {
-    width: 350px;
+    width: 100%;
     margin-top: 40px;
     margin-left: 55px;
     margin-right: 55px;
