@@ -155,20 +155,30 @@ h2 {
 }
 
 @media screen and (min-width: 1100px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cestovatel {
+        width: 490px;
+    }
     #travel {
         max-width: 426px;
     }
 
     .wrapper {
+        width: 1040px;
         display: flex;
         flex-wrap: wrap;
-        padding: 60px 80px;
+        /*justify-content: center;*/
+        /*padding: 60px 80px;*/
     }
 
     .sekce-uvod,
     .sekce-sluzby {
         display: flex;
-        flex: 0 0 calc(100% - 30px);
+        flex: 1 1 calc((100% - 30px) / 2);
         justify-content: space-between;
     }
 
@@ -181,6 +191,20 @@ h2 {
         order: -1;  
     }
 
+    .sluzba-prvni {
+        margin-left: 60px;
+    }
+    .hlavni,
+    .sluzba-druha {
+        margin-right: 60px;
+    }
+    .hlavni {
+        width: 490px;
+    }
+    .popis-sluzby {
+        width: 430px;
+    }
+
     h1,
     h2,
     .popis {
@@ -191,6 +215,9 @@ h2 {
         margin: 0;
     }
 
+    h1 {
+        margin-top: 70px;
+    } 
     h2 {
         margin-top: 40px;
     }
@@ -203,7 +230,7 @@ h2 {
         justify-content: flex-start;
     }
 
-    .prvni {
-        margin-left: 0;
+    .tlacitko {
+        margin: 0 20px 0 0;
     }
 }
