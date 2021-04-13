@@ -46,9 +46,12 @@ h1 {
     font-size: 28px;
 }
 
-.nadpis {
-        border-bottom: 2px solid #407BFF;
-        
+.linka {
+    width: 60px;
+    height: 2px;
+    background-color: #407BFF;
+    margin-left: auto;   
+    margin-right: auto;   
 }
 
 a {
