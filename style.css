@@ -23,7 +23,7 @@ body {
 }
 
 #travel {
-    max-width: 350px;
+    max-width: 75%;
 }
 .cestovatel {
     display: flex;
@@ -78,12 +78,12 @@ a {
 
 h2 {
     font-size: 16px;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .popis {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .hlavni {
@@ -100,15 +100,15 @@ h2 {
     margin-bottom: 15px;
 }
 
-.box {
+.box-ikona {
     padding: 20px;
 }
 
-.text {
+.box-text {
     margin: 0;
     font-size: 13px;
     flex-grow: 1;
-    margin-top: 12px;
+    padding: 32px 20px 20px 20px;
 }
 
 @media screen and (min-width: 640px) {
@@ -118,7 +118,7 @@ h2 {
    } 
 
    #travel {
-       max-width: 400px;
+       max-width: 100%;
    }
 
    .popis {
@@ -134,9 +134,9 @@ h2 {
    }
 
    .sluzby {
+       margin: 0;
        flex-direction: column;
        flex: 0 0 calc((100% - 40px) / 3); 
-
    }
 
    .ikona {
@@ -148,15 +148,62 @@ h2 {
        padding-top: 40px;
        padding-bottom: 0;
    }
-  .text {
-       margin-top: 0;
-       text-align: center;
-       
-    }
 
+  .box-text {
+       text-align: center; 
+    }
 }
 
-
 @media screen and (min-width: 1100px) {
-    
+    #travel {
+        max-width: 426px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 60px 80px;
+    }
+
+    .sekce-uvod,
+    .sekce-sluzby {
+        display: flex;
+        flex: 0 0 calc(100% - 30px);
+        justify-content: space-between;
+    }
+
+    .stred {
+        margin: 80px 0;
+    }
+
+    .uvod-vlevo,
+    .sluzby-ck {
+        order: -1;  
+    }
+
+    h1,
+    h2,
+    .popis {
+        text-align: left;
+    }
+
+    .linka {
+        margin: 0;
+    }
+
+    h2 {
+        margin-top: 40px;
+    }
+
+    .sluzby {
+        margin: 0;
+    }
+
+    .navigace {
+        justify-content: flex-start;
+    }
+
+    .prvni {
+        margin-left: 0;
+    }
 }
