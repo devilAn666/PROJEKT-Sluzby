@@ -28,10 +28,7 @@ body {
 .cestovatel {
     display: flex;
     justify-content: center;
-
 }
-
-
 
 h1,
 h2 {
@@ -66,6 +63,8 @@ a {
 .tlacitko {
     text-align: center;
     margin-top: 32px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .dobrodruzstvi {
@@ -74,8 +73,7 @@ a {
 }
 
 .plaz {
-    background-color: #8B8B8B;
-    
+    background-color: #8B8B8B;  
 }
 
 h2 {
@@ -107,12 +105,55 @@ h2 {
 }
 
 .text {
+    margin: 0;
     font-size: 13px;
     flex-grow: 1;
+    margin-top: 12px;
 }
 
 @media screen and (min-width: 640px) {
-    
+   .navigace {
+       display: flex;
+       justify-content: center;
+   } 
+
+   #travel {
+       max-width: 400px;
+   }
+
+   .popis {
+       width: 550px;
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+   .sluzby-ck,
+   .sluzby-delegat {
+        display: flex;  
+        justify-content: space-between;        
+   }
+
+   .sluzby {
+       flex-direction: column;
+       flex: 0 0 calc((100% - 40px) / 3); 
+
+   }
+
+   .ikona {
+       display: flex;
+       justify-content: center;
+   }
+
+   .ikona img {
+       padding-top: 40px;
+       padding-bottom: 0;
+   }
+  .text {
+       margin-top: 0;
+       text-align: center;
+       
+    }
+
 }
 
 
