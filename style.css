@@ -68,8 +68,7 @@ a {
 }
 
 .dobrodruzstvi {
-    background-color: #407BFF;
-    
+    background-color: #407BFF;   
 }
 
 .plaz {
@@ -81,14 +80,17 @@ h2 {
     margin-top: 80px;
 }
 
-.popis {
+.popis-sluzby,
+.popis-hlavni {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
-.hlavni {
+.popis-hlavni {
     margin-top: 30px;
-    margin-bottom: 30px;
+}
+.popis-sluzby {
+    margin-top: 16px;
 }
 
 .sluzby {
@@ -117,11 +119,16 @@ h2 {
        justify-content: center;
    } 
 
+   .tlacitko {
+        margin: 0 20px 0 0;
+   }
+
    #travel {
        max-width: 100%;
    }
 
-   .popis {
+   .popis-hlavni,
+   .popis-sluzby {
        width: 550px;
        margin-left: auto;
        margin-right: auto;
@@ -136,6 +143,7 @@ h2 {
    .sluzby {
        margin: 0;
        flex-direction: column;
+       width: 170px;
        flex: 0 0 calc((100% - 40px) / 3); 
    }
 
@@ -171,15 +179,11 @@ h2 {
         width: 1040px;
         display: flex;
         flex-wrap: wrap;
-        /*justify-content: center;*/
-        /*padding: 60px 80px;*/
     }
 
     .sekce-uvod,
     .sekce-sluzby {
         display: flex;
-        flex: 1 1 calc((100% - 30px) / 2);
-        justify-content: space-between;
     }
 
     .stred {
@@ -194,11 +198,11 @@ h2 {
     .sluzba-prvni {
         margin-left: 60px;
     }
-    .hlavni,
+    .sluzba-hlavni,
     .sluzba-druha {
         margin-right: 60px;
     }
-    .hlavni {
+    .popis-hlavni {
         width: 490px;
     }
     .popis-sluzby {
@@ -207,7 +211,8 @@ h2 {
 
     h1,
     h2,
-    .popis {
+    .popis-hlavni,
+    .popis-sluzby {
         text-align: left;
     }
 
@@ -223,6 +228,7 @@ h2 {
     }
 
     .sluzby {
+        width: 170px;
         margin: 0;
     }
 
@@ -230,7 +236,4 @@ h2 {
         justify-content: flex-start;
     }
 
-    .tlacitko {
-        margin: 0 20px 0 0;
-    }
 }
