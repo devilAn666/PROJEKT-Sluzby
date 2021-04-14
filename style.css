@@ -143,7 +143,6 @@ h2 {
    .sluzby {
        margin: 0;
        flex-direction: column;
-       width: 230px;
        flex: 0 0 calc((100% - 40px) / 3);
    }
 
